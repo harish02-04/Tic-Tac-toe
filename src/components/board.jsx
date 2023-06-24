@@ -1,22 +1,6 @@
 import { useState } from 'react';
 import Sq from './Square';
-const board = () => {
-  const [sq, setsq] = useState(Array(9).fill(null));
-  const [tog, setTog] = useState('false');
-  const draw = pos => {
-    if (sq[pos]) {
-      return;
-    }
-    setsq(cur => {
-      return cur.map((sqVal, sqIdx) => {
-        if (sqIdx == pos) {
-          return tog ? 'X' : 'O';
-        }
-        return sqVal;
-      });
-    });
-    setTog(cur => !cur);
-  };
+const board = ({ sq, draw }) => {
   const sqRender = p => {
     return <Sq value={sq[p]} onClick={() => draw(p)} />;
   };
