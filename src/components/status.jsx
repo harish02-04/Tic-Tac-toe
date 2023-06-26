@@ -23,6 +23,6 @@ const status = ({ w, gam }) => {
       );
     }
   }
-  return <h1>{tellS()}</h1>;
+  return <h3>{tellS()}</h3>;
 };
 export default status;

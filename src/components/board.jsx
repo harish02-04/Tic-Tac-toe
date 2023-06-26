@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import Sq from './Square';
-const board = ({ sq, draw }) => {
+const board = ({ sq, draw, ws }) => {
   const sqRender = p => {
-    return <Sq value={sq[p]} onClick={() => draw(p)} />;
+    const ch = ws.includes(p);
+    return <Sq value={sq[p]} onClick={() => draw(p)} ch={ch} />;
   };
   return (
     <center>
