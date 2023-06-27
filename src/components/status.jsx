@@ -12,17 +12,17 @@ const status = ({ w, gam }) => {
     if (w) {
       return (
         <>
-          The winner is <span className={w == 'X' ? 'CX' : 'CY'}>{w}</span>
+          𝘛𝘩𝘦 𝘸𝘪𝘯𝘯𝘦𝘳 𝘪𝘴 <span className={w == 'X' ? 'CX' : 'CY'}>{w}</span>
         </>
       );
     } else {
       return (
         <>
-          The Next Player is <span className={p == 'X' ? 'CX' : 'CY'}>{p}</span>
+          𝘕𝘦𝘹𝘵 𝘗𝘭𝘢𝘺𝘦𝘳 𝘪𝘴 <span className={p == 'X' ? 'CX' : 'CY'}>{p}</span>
         </>
       );
     }
   }
-  return <h3>{tellS()}</h3>;
+  return <h2>{tellS()}</h2>;
 };
 export default status;

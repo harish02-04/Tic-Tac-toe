@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="app">
       <h1>
-        𝓣𝓘𝓒 <span className="CX">𝓣𝓐𝓒</span> 𝓣𝓞𝓔
+        𝕋𝕚𝕔 <span className="CX">𝕋𝕒𝕔</span> 𝕋𝕠𝕖
       </h1>
       <Status w={w} gam={gamboard} />
       <Board sq={gamboard.sq} draw={draw} ws={ws} />
@@ -53,6 +53,7 @@ function App() {
       </button>
       <h2>𝙶𝚊𝚖𝚎 𝙷𝚒𝚜𝚝𝚘𝚛𝚢</h2>
       <History his={his} toMove={toMove} cmov={cmov} />
+      <div className="bg-balls"></div>
     </div>
   );
 }
