@@ -1,7 +1,5 @@
 # 𝕋𝕚𝕔 𝕋𝕒𝕔 𝕋𝕠𝕖
 
-![Tic-Tac-Toe Logo](link-to-your-logo.png)
-
 ## Overview
 
 Tic-Tac-Toe is a classic game developed using ReactJS. It includes the standard features of a Tic-Tac-Toe game, along with an additional feature that allows users to view the history of their turns and continue the game from a specific point.
